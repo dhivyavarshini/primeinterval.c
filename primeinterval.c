@@ -17,7 +17,7 @@ int main(void) {
 		}
 			if(flag==0)
 			{
-				printf("%d",a);
+				printf("%d\n",a);
 		
 			}
 			++a;
