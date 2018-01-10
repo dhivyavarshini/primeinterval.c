@@ -1,18 +1,29 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
-{
-int n,i,j;
-scanf("%d",&n);
-for(i=a;i<=b;++i)
-{
-for(j=2;j<=n/2;++j)
-{
-if(n%j==0)
-{
-printf("%d",n);
+#include <stdio.h>
+
+int main(void) {
+	int a,b,i,flag;
+	scanf("%d %d",&a,&b);
+	while(a<b)
+	{
+		flag=0;
+		for(i=2;i<=a/2;++i)
+		{
+			if(a%i==0)
+			{
+				flag=1;
+				break;
+	
+			}
+		}
+			if(flag==0)
+			{
+				printf("%d",a);
+		
+			}
+			++a;
+		
+	}
+	return 0;
 }
-getch();
-}
-  
+
   
